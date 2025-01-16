@@ -13,6 +13,7 @@ const createUserNameValidationSchema = z.object({
   lastName: z.string(),
 });
 
+
 export const createFacultyValidationSchema = z.object({
   body: z.object({
     password: z.string().max(20),
@@ -33,11 +34,13 @@ export const createFacultyValidationSchema = z.object({
   }),
 });
 
+
 const updateUserNameValidationSchema = z.object({
   firstName: z.string().min(1).max(20).optional(),
   middleName: z.string().optional(),
   lastName: z.string().optional(),
 });
+
 
 export const updateFacultyValidationSchema = z.object({
   body: z.object({
