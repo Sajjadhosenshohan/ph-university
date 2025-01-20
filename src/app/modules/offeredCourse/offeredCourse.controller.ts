@@ -53,7 +53,7 @@ const updateOfferedCourse = catchAsync(async (req, res) => {
   sendResponse(res, {
     statusCode: httpStatus.OK,
     success: true,
-    message: 'Offered-course is updated succesfully',
+    message: 'Offered-course is updated successfully',
     data: result,
   });
 });

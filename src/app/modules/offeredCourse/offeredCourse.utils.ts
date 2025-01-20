@@ -1,3 +1,4 @@
+import { TSchedule } from "./offeredCourse.interface";
 
 
 export const hasTimeConflict = (
